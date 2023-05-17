@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { Button, Grid, Link, TextField, Typography } from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
+import { CircularProgress, Grid, TextField, Typography } from "@mui/material";
 import { Card } from "./styled.signupform";
+import Button from "../../../shared/Button/Button";
 
-const SignUpForm = () => {
+const SignUpForm = ({ isSubmitting }) => {
   const backgroundImage = require("../../../assets/Home.png");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -48,7 +50,7 @@ const SignUpForm = () => {
             Welcome Bookworm
           </Typography>
           <Typography sx={{ fontSize: "21px", fontWeight: 600 }}>
-            Sign Up
+            Sign Up (Create an account)
           </Typography>
           <form onSubmit={handleSubmit}>
             <TextField
@@ -91,13 +93,17 @@ const SignUpForm = () => {
                 fontWeight: 500,
               }}
             >
-              Sign Up
+              {isSubmitting ? (
+                <CircularProgress size={25} sx={{ color: "white" }} />
+              ) : (
+                "Sign Up"
+              )}
             </Button>
             <Typography sx={{ fontSize: "14px", mt: "10px" }}>
-              Already Resgistered?,{" "}
-              <Link href="/signin" underline="none">
+              Already Registered?,{" "}
+              <RouterLink to="/signin" underline="none" color="inherit">
                 Sign In
-              </Link>
+              </RouterLink>
             </Typography>
           </form>
         </Card>

@@ -8,8 +8,8 @@ const Card = styled(Box)(({ theme }) => ({
   borderRadius: "15px",
   justifyContent: "space-around",
   alignItems: "center",
-  marginTop: "10em",
-  marginRight: "20em",
+  marginTop: "6em",
+  marginRight: "10em",
   flexDirection: "column",
   backgroundColor: "#cfe2ff",
   [theme.breakpoints.down("sm")]: {
