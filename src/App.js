@@ -1,12 +1,12 @@
-import React from "react";
-// import LoginForm from "./Modules/Auth/LoginForm/LoginForm";
-import SignUpForm from "./Modules/Auth/SignUpForm/SignUpForm";
+/* eslint-disable */
+import { Outlet } from "react-router-dom";
+import Routes from "./routes/index";
 
 function App() {
   return (
     <div>
-      {/* <LoginForm /> */}
-      <SignUpForm />
+      <Routes />
+      <Outlet />
     </div>
   );
 }
