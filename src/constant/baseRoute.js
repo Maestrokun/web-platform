@@ -10,14 +10,14 @@ const BaseRoutes = [
   {
     path: "/*",
     exact: true,
-    component: lazy(() => import("../Modules/Auth/routes/index")),
+    component: lazy(() => import("../modules/Auth/routes/index")),
     Layout: false,
     useAuth: false,
   },
   {
-    path: `${BasePaths.HOME}/*`,
+    path: `${BasePaths.ADMIN}/*`,
     exact: true,
-    component: lazy(() => import("../Modules/Home/routes/index")),
+    component: lazy(() => import("../modules/UserPage/routes/index")),
     Layout: MainLayout,
     useAuth: true,
     sidenavItems: ADMIN_SIDENAVS,

@@ -1,5 +1,5 @@
 export const BasePaths = {
-  HOME: `/home`,
+  ADMIN: `/admin`,
 };
 
 export const AuthPaths = {
@@ -8,6 +8,9 @@ export const AuthPaths = {
 };
 
 export const HomePaths = {
-  HOME_ACCOUNT: `/home/account`,
-  HOME_PROFILE: `/home/profile`,
+  HOME: `home`,
+  HOME_ACCOUNT: `account`,
+  HOME_PROFILE: `profile`,
+  HOME_SUBSCRIPTION: `subscription`,
+  HOME_SETTINGS: `settings`,
 };

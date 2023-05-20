@@ -8,7 +8,6 @@ const Account = () => {
         sx={{
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "red",
         }}
       >
         Account

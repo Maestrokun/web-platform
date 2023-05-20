@@ -3,7 +3,7 @@ import { HomePaths } from "./path";
 const ADMIN_SIDENAVS = [
   {
     name: "Home",
-    path: "/home",
+    path: HomePaths.HOME,
   },
   {
     name: "Profile",
@@ -15,11 +15,11 @@ const ADMIN_SIDENAVS = [
   },
   {
     name: "Subscription",
-    path: "/home/subscription",
+    path: HomePaths.HOME_SUBSCRIPTION,
   },
   {
     name: "Settings",
-    path: "/home/settings",
+    path: HomePaths.HOME_SETTINGS,
   },
 ];
 

@@ -9,8 +9,9 @@ const HomePage = () => {
         container
         xs={12}
         sx={{
+          maxHeight: "1100px",
           display: "flex",
-          alignItems: "center",
+          // alignItems: "center",
           justifyContent: "center",
           mt: "20px",
         }}
