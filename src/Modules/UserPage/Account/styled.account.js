@@ -14,18 +14,4 @@ const Container = styled(Box)(({ theme }) => ({
   },
 }));
 
-const Home = styled(Box)(({ theme }) => ({
-  border: "1px solid white",
-  borderRadius: "100px",
-  width: "20%",
-  height: "40vh",
-  display: "flex",
-  flexWrap: "nowrap",
-  alignItems: "center",
-  justifyContent: "center",
-  marginRight: "3em",
-  backgroundColor: "#fff",
-  color: "black",
-}));
-
-export { Container, Home };
+export { Container };
